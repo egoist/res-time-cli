@@ -47,7 +47,7 @@ module.exports = function* () {
     throw new Error('Expected input domains')
   }
 
-  setInterval(() => {
+  const timer = setInterval(() => {
     render(domains)
   }, 80)
 
@@ -69,5 +69,5 @@ module.exports = function* () {
   })
 
   render(domains, times)
-  process.exit()
+  clearInterval(timer)
 }
