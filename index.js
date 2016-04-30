@@ -28,9 +28,9 @@ function render(domains, ret) {
     '\n' +
     table(
       domains.map((domain, index) => {
-        const time = ret && ret[index]
-          ? colorful(ret[index])
-          : null
+        const time = ret && ret[index] ?
+          colorful(ret[index]) :
+          null
         return [
           `  ${domain}`,
           time || spinner.frame()

@@ -16,7 +16,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo"
   },
   "files": [
     "index.js",
@@ -28,7 +28,6 @@
     "response"
   ],
   "devDependencies": {
-    "ava": "latest",
     "xo": "latest"
   },
   "xo": {
