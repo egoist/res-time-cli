@@ -1,0 +1,45 @@
+{
+  "name": "res-time-cli",
+  "version": "0.0.0",
+  "description": "Get TCP/socket response time in Terminal.",
+  "license": "MIT",
+  "repository": "egoist/res-time-cli",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "bin": {
+    "res-time": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "tcp",
+    "socket",
+    "response"
+  ],
+  "devDependencies": {
+    "ava": "latest",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "dependencies": {
+    "cac": "^1.0.0",
+    "log-update": "^1.0.2",
+    "ora": "^0.2.1",
+    "res-time": "^1.0.1",
+    "text-table": "^0.2.0"
+  }
+}
